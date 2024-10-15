@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+background-color: #214a46;}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.photo-container {
+  width: 300px;  
+  height: 300px;
+  margin-right: 45px;
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.text-letter {
+  display: inline-block;
+  font-family: "Alegreya", serif;
+  font-weight: 900;
+  color: white;
+  font-size: 66px;
+  cursor: pointer;
+  transition: transform 0.7s ease;
+}
+
+.text-letter:hover {
+  transform: rotate(35deg);
+}
+
+.space {
+  padding: 5px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
