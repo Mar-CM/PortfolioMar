@@ -36,7 +36,9 @@ function Hero() {
 						<span className="text-letter">r</span>
 					</div>
 					<div className="heroText">
-						<h4>¡Hola! Soy Mar, tu desarrolladora web junior favorita.</h4>
+						<h4 className="heroText_name">
+							¡Hola! Soy Mar, tu desarrolladora web junior favorita.
+						</h4>
 						<p>¡Bienvenid@ a mi pequeño rincón en el ciberespacio!</p>
 						<p>
 							Aquí puedes hacer un vistazo a mis habilidades en front-end y
