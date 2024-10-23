@@ -1,31 +1,71 @@
-
-
 body {
   background-color: #214a46;
+  font-family: "Poppins", sans-serif;
 }
   
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+  justify-content: space-around;
+  height: 80px;
 }
-  
-.photo-container {
+
+.headerLogo {
+  margin-left: 25px;
+}
+
+.headerNav_list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-right: 25px;
+}
+
+.headerNav_link {
+  color: black;
+}
+
+.headerNav_link:hover {
+  color: white;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-bottom: 155px;
+  overflow: hidden;
+  z-index: 1;
+  // min-height: 100vh;
+}
+
+.heroPhoto {
   width: 300px;  
   height: 300px;
-  margin-right: 45px;
+  margin: 45px;
 }
   
-.photo-container img {
+.heroPhoto img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-  
+
+.heroName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.heroName_letter {
+  line-height: 0.8;
+}
+
 .text-letter {
   display: inline-block;
-  font-family: "Alegreya", serif;
   font-weight: 900;
   color: white;
   font-size: 66px;
@@ -35,14 +75,93 @@ body {
 
 .text-letter:hover {
   transform: rotate(35deg);
+  // color: #214a46;
 }
 
-.space {
-  padding: 5px;
+.buttonCV {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease transform 1s ease;
 }
 
-.name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.buttonCV:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.heroText {
+margin-top: 30px;
+width: 750px;
+}
+
+.ball {
+  position: absolute;
+  width: 100px; 
+  height: 100px; 
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 50%;
+  filter: blur(35px); 
+  z-index: 0; 
+}
+
+/* Animaciones para las bolas */
+.ball1 {
+  animation: moveBall1 18s linear infinite; 
+}
+
+.ball2 {
+  animation: moveBall2 15s linear infinite; 
+}
+
+
+@keyframes moveBall1 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 20%; 
+    left: 80%; 
+  }
+  50% {
+    top: 80%; 
+    left: 50%; 
+  }
+  75% {
+    top: 60%; 
+    left: 20%; 
+  }
+  100% {
+    top: 0;
+    left: 0; 
+  }
+}
+
+@keyframes moveBall2 {
+  0% {
+    top: 100%;
+    left: 100%;
+  }
+  25% {
+    top: 30%; 
+    left: 50%; 
+  }
+  50% {
+    top: 70%; 
+    left: 10%; 
+  }
+  75% {
+    top: 10%; 
+    left: 60%;
+  }
+  100% {
+    top: 100%;
+    left: 100%;
+  }
 }

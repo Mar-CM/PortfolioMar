@@ -1,31 +1,34 @@
-import photoMar from "../images/Mar (2) (1).jpeg";
+import AboutMe from "./AboutMe";
 
 function Header() {
 	return (
 		<>
 			<header className="header">
-				<nav></nav>
-				<div className="photo-container">
-					<img src={photoMar} alt="Foto Perfil" />
-				</div>
-				<div className="name">
-					<div>
-						<span className="text-letter">M</span>
-						<span className="text-letter">a</span>
-						<span className="text-letter">r</span>
-					</div>
-					<div>
-						<span className="text-letter">C</span>
-						<span className="text-letter">a</span>
-						<span className="text-letter">b</span>
-						<span className="text-letter">a</span>
-						<span className="text-letter">l</span>
-						<span className="text-letter">l</span>
-						<span className="text-letter">e</span>
-						<span className="text-letter">r</span>
-						<span className="text-letter">o</span>
-					</div>
-				</div>
+				<h3 className="headerLogo">Mar Caballero</h3>
+				<nav className="headerNav">
+					<ul className="headerNav_list">
+						<li>
+							<a href="/AboutMe" className="headerNav_link">
+								Sobre mí
+							</a>
+						</li>
+						<li>
+							<a href="/AboutMe" className="headerNav_link">
+								Proyectos
+							</a>
+						</li>
+						<li>
+							<a href="/AboutMe" className="headerNav_link">
+								Habilidades
+							</a>
+						</li>
+						<li>
+							<a href="/AboutMe" className="headerNav_link">
+								Contacto
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</header>
 		</>
 	);
