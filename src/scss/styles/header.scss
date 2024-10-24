@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.1);
+  // background-color: rgba(33, 74, 70, 0.4);
+  z-index: 1000;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);}
+
+.headerLogo {
+  margin-left: 25px;
+  // color: white;
+  color: black;
+}
+
+.headerNav_list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-right: 25px;
+}
+
+.headerNav_link {
+  // color: white;
+  color: black;
+  font-weight: 700;
+}
+
+.headerNav_link:hover {
+  // color: #214a46;
+  color: white;
+
+}
