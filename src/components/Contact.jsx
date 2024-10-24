@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 function Contact() {
 	return (
 		<>
 			<section className="contact">
-				<h2>Contacto</h2>
+				<h2 className="contactTitle">CONTACTITOS</h2>
 			</section>
 		</>
 	);

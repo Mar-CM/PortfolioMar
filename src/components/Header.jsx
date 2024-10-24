@@ -1,31 +1,36 @@
 import AboutMe from "./AboutMe";
+import { Link } from "react-router-dom";
 
 function Header() {
 	return (
 		<>
 			<header className="header">
-				<h3 className="headerLogo">Mar Caballero</h3>
 				<nav className="headerNav">
 					<ul className="headerNav_list">
 						<li>
-							<a href="/AboutMe" className="headerNav_link">
+							<Link to="/" className="headerLogo headerNav_link">
+								Mar Caballero
+							</Link>
+						</li>
+						<li>
+							<Link to="/aboutme" className="headerNav_link">
 								Sobre mí
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/AboutMe" className="headerNav_link">
+							<Link to="/project" className="headerNav_link">
 								Proyectos
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/AboutMe" className="headerNav_link">
+							<Link to="/skills" className="headerNav_link">
 								Habilidades
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href="/AboutMe" className="headerNav_link">
+							<Link to="/contact" className="headerNav_link">
 								Contacto
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</nav>

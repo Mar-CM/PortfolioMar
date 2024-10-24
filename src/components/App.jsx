@@ -1,22 +1,20 @@
 import "../scss/App.scss";
 
 import Header from "./Header.jsx";
-import Hero from "./Hero.jsx";
-import AboutMe from "./AboutMe.jsx";
-import Projects from "./Projects.jsx";
-import Skills from "./Skills.jsx";
+import Main from "./Main.jsx";
+import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
+
+import { Route, Routes } from "react-router-dom";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<main>
-				<Hero />
-				<AboutMe />
-				<Projects />
-				<Skills />
-			</main>
+			<Routes>
+				<Route path="/" element={<Main />} />
+				<Route path="/contact" element={<Contact />} />
+			</Routes>
 			<Footer />
 		</>
 	);

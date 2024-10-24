@@ -1,8 +1,8 @@
 function Projects() {
 	return (
 		<>
-			<section className="proyect">
-				<h2>Proyectos</h2>
+			<section className="project">
+				<h3 className="projectTitle">Proyectos</h3>
 			</section>
 		</>
 	);
