@@ -1,7 +1,7 @@
 function AboutMe() {
 	return (
 		<>
-			<section className="aboutMe">
+			<section id="aboutMe" className="aboutMe">
 				<h3 className="aboutMe_tittle">Sobre mí</h3>
 				<p className="aboutMe_text">
 					¡Hola mundo! 🌞 Soy Mar, una programadora Junior especializada en

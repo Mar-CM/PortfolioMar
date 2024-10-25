@@ -2,28 +2,34 @@ import AboutMe from "./AboutMe";
 import { Link } from "react-router-dom";
 
 function Header() {
+	const scrollToTop = () => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	};
+
 	return (
 		<>
 			<header className="header">
 				<nav className="headerNav">
-					<ul className="headerNav_list">
+					<ul className="headerLogo">
 						<li>
-							<Link to="/" className="headerLogo headerNav_link">
+							<Link to="/" className="headerNav_link" onClick={scrollToTop}>
 								Mar Caballero
 							</Link>
 						</li>
+					</ul>
+					<ul className="headerNav_list">
 						<li>
-							<Link to="/aboutme" className="headerNav_link">
+							<Link to="/#aboutMe" className="headerNav_link">
 								Sobre mí
 							</Link>
 						</li>
 						<li>
-							<Link to="/project" className="headerNav_link">
+							<Link to="/#project" className="headerNav_link">
 								Proyectos
 							</Link>
 						</li>
 						<li>
-							<Link to="/skills" className="headerNav_link">
+							<Link to="/#skills" className="headerNav_link">
 								Habilidades
 							</Link>
 						</li>
