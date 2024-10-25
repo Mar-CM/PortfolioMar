@@ -1,4 +1,3 @@
-import AboutMe from "./AboutMe";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -34,7 +33,11 @@ function Header() {
 							</Link>
 						</li>
 						<li>
-							<Link to="/contact" className="headerNav_link">
+							<Link
+								to="/contact"
+								className="headerNav_link"
+								onClick={scrollToTop}
+							>
 								Contacto
 							</Link>
 						</li>

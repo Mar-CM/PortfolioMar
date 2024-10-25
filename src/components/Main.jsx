@@ -2,6 +2,7 @@ import Hero from "./Hero.jsx";
 import AboutMe from "./AboutMe.jsx";
 import Projects from "./Projects.jsx";
 import Skills from "./Skills.jsx";
+import Footer from "./Footer.jsx";
 
 function Main() {
 	return (
@@ -10,6 +11,7 @@ function Main() {
 			<AboutMe />
 			<Projects />
 			<Skills />
+			<Footer />
 		</main>
 	);
 }

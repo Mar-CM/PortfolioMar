@@ -3,7 +3,6 @@ import "../scss/App.scss";
 import Header from "./Header.jsx";
 import Main from "./Main.jsx";
 import Contact from "./Contact.jsx";
-import Footer from "./Footer.jsx";
 
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -29,7 +28,6 @@ function App() {
 				<Route path="/" element={<Main />} />
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
-			<Footer />
 		</>
 	);
 }

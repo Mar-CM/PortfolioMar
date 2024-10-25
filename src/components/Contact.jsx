@@ -1,11 +1,14 @@
-import { Link } from "react-router-dom";
+import Footer from "./Footer.jsx";
 
 function Contact() {
 	return (
 		<>
-			<section className="contact">
-				<h2 className="contactTitle">CONTACTITOS</h2>
-			</section>
+			<div className="containerContact">
+				<section className="contact">
+					<h2 className="contactTitle">CONTACTITOS</h2>
+				</section>
+				<Footer />
+			</div>
 		</>
 	);
 }

@@ -1,17 +1,16 @@
 .aboutMe {
-  padding-left: 150px;
-  padding-right: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 55px 150px 0 150px;
 };
 
 .aboutMe_tittle{
  color: white;
  font-weight: 700;
  font-size: 50px;
- padding-bottom: 25px;
+ padding: 0 0 30px;
 }
 
 .aboutMe_text {

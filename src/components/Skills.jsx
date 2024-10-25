@@ -2,7 +2,7 @@ function Skills() {
 	return (
 		<>
 			<section id="skills" className="skills">
-				<h2>Habilidades</h2>
+				<h3 className="skillsTitle">Habilidades</h3>
 			</section>
 		</>
 	);
