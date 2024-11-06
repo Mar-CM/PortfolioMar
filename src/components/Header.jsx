@@ -11,7 +11,7 @@ function Header() {
 				<nav className="headerNav">
 					<ul className="headerLogo">
 						<li>
-							<Link to="/" className="headerNav_link" onClick={scrollToTop}>
+							<Link to="/" className=" headerLogo_name" onClick={scrollToTop}>
 								Mar Caballero
 							</Link>
 						</li>

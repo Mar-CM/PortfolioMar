@@ -21,6 +21,17 @@
   color: black;
 }
 
+.headerLogo_name {
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+}
+
+.headerLogo_name:hover {
+  color: black;
+
+}
+
 .headerNav_list {
   display: flex;
   align-items: center;

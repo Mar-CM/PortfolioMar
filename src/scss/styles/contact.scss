@@ -3,10 +3,56 @@
 }
 
 .contact{
-  padding-top: 200px;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contactBox{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contactTitle{
   color: white;
-  font-size: 100px;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.contactForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactForm_input{
+  margin: 10px;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100vh;
+  outline: none;
+  border: solid white 1px;
+}
+
+.message {
+  height: 100px;
+}
+
+.contactButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 100px;
+  border: none; 
+  outline: none; 
+  cursor: pointer; 
 }
