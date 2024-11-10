@@ -47,7 +47,9 @@ function Hero() {
 						<h4 className="heroText_name">
 							¡Hola! Soy Mar, tu desarrolladora web junior favorita.
 						</h4>
-						<p>¡Bienvenid@ a mi pequeño rincón en el ciberespacio!</p>
+						<p>¡Bienvenid@ a mi rincón en el ciberespacio!</p>
+						<p>Aquí podrás explorar mis proyectos y habilidades.</p>
+						<p>¡Espero que disfrutes la experiencia!</p>
 					</div>
 					<button onClick={handleDownload} className="buttonCV">
 						Descargar CV
