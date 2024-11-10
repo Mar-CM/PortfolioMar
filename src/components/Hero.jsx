@@ -13,8 +13,6 @@ function Hero() {
 	return (
 		<>
 			<section className="hero">
-				<div className="ball ball1"></div>
-				<div className="ball ball2"></div>
 				<div className="heroPhoto">
 					<img src={photoMar} alt="Foto Perfil" />
 				</div>
