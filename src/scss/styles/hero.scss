@@ -1,6 +1,7 @@
 @import '../core/variables';
 
 .hero {
+  background-image: url("../images/fondo.png");
   position: relative;
   display: flex;
   justify-content: center;
@@ -10,7 +11,8 @@
   overflow: hidden;
   z-index: 1;
   flex-direction: row-reverse;
-  margin-top: 100px;
+  margin-top: 60px;
+  padding-top: 40px;
 
   &Photo {
     img {
@@ -18,6 +20,19 @@
       height: 300px;
       border-radius: 50%;
       margin-right: 300px;
+
+    @media (max-width: 768px) {
+        width: 250px;
+        height: 250px;
+        margin-right: 150px;
+      }
+
+    @media (max-width: 480px) {
+        width: 200px;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
     }
   }
 
@@ -28,6 +43,16 @@
     padding-top: 50px;
     padding-left: 175px;
     padding-right: 50px;
+
+    @media (max-width: 768px) {
+      padding-left: 100px;
+      padding-right: 30px;
+    }
+
+    @media (max-width: 480px) {
+      padding-left: 0;
+      padding-right: 15px;
+    }
 
     &_letter {
       line-height: 0.8;
@@ -40,6 +65,10 @@
       font-size: 66px;
       cursor: pointer;
       transition: transform 0.2s ease;
+
+      @media (max-width: 480px) {
+        font-size: 36px;
+      }
 
       &:hover {
         transform: rotate(35deg);
@@ -79,77 +108,36 @@
     }
   }
 
-  .ball {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(33, 74, 70, 0.5);
-    border-radius: 50%;
-    filter: blur(35px);
-    z-index: 0;
+  // .ball {
+  //   position: absolute;
+  //   width: 100px;
+  //   height: 100px;
+  //   background-color: rgba(33, 74, 70, 0.5);
+  //   border-radius: 50%;
+  //   filter: blur(35px);
+  //   z-index: 0;
+  // }
+
+  // .ball1 {
+  //   animation: moveBall1 18s linear infinite;
+  // }
+
+  // .ball2 {
+  //   animation: moveBall2 15s linear infinite;
+  // }
+
+  // @keyframes moveBall1 {
+  //   0% { top: 0; left: 0; }
+  //   25% { top: 20%; left: 80%; }
+  //   50% { top: 80%; left: 50%; }
+  //   75% { top: 60%; left: 20%; }
+  //   100% { top: 0; left: 0; }
+  // }
+
+  // @keyframes moveBall2 {
+  //   0% { top: 100%; left: 100%; }
+  //   25% { top: 30%; left: 50%; }
+  //   50% { top: 70%; left: 10%; }
+  //   75% { top: 10%; left: 60%; }
+  //   100% { top: 100%; left: 100%; }
   }
-
-  .ball1 {
-    animation: moveBall1 18s linear infinite;
-  }
-
-  .ball2 {
-    animation: moveBall2 15s linear infinite;
-  }
-
-  @keyframes moveBall1 {
-    0% { top: 0; left: 0; }
-    25% { top: 20%; left: 80%; }
-    50% { top: 80%; left: 50%; }
-    75% { top: 60%; left: 20%; }
-    100% { top: 0; left: 0; }
-  }
-
-  @keyframes moveBall2 {
-    0% { top: 100%; left: 100%; }
-    25% { top: 30%; left: 50%; }
-    50% { top: 70%; left: 10%; }
-    75% { top: 10%; left: 60%; }
-    100% { top: 100%; left: 100%; }
-  }
-
-  // Estilos para tablets
-  @media (max-width: 768px) {
-    &Photo img {
-      width: 250px;
-      height: 250px;
-      margin-right: 150px;
-    }
-
-    &Name {
-      padding-left: 100px;
-      padding-right: 30px;
-
-      .text-letter {
-        font-size: 50px;
-      }
-    }
-  }
-
-  // Estilos para móviles
-  @media (max-width: 480px) {
-    flex-direction: column;
-    margin-top: 50px;
-
-    &Photo img {
-      width: 200px;
-      height: 200px;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-
-    &Name {
-      padding-left: 0;
-      padding-right: 15px;
-
-      .text-letter {
-        font-size: 36px;
-      }
-    }
-  }
-}

@@ -11,8 +11,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 20px;
+  margin-top: 50px;
 
   &Box {
     display: flex;
@@ -24,6 +25,10 @@
     color: $color-green;
     font-weight: 700;
     font-size: 50px;
+  }
+  
+  &Text {
+
   }
 
   &Form{
@@ -41,6 +46,7 @@
       outline: none;
       border: solid $color-green 2px;
     }
+
   }
 
   &Button {
@@ -62,4 +68,8 @@
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
   }
+}
+
+.message {
+  height: 100px;
 }
