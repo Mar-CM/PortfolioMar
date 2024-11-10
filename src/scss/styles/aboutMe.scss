@@ -1,21 +1,4 @@
-// .aboutMe {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   padding: 55px 150px 0 150px;
-// };
-
-// .aboutMe_tittle{
-//  color: white;
-//  font-weight: 700;
-//  font-size: 50px;
-//  padding: 0 0 30px;
-// }
-
-// .aboutMe_text {
-//   padding-bottom: 10px;
-// }
+@import '../core/variables';
 
 .aboutMe {
   display: flex;
@@ -24,8 +7,8 @@
   justify-content: center;
   padding: 55px 150px 0 150px;
 
-  &_tittle {
-    color: white;
+  &_title {
+    color: $color-green;
     font-weight: 700;
     font-size: 50px;
     padding: 0 0 30px;

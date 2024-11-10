@@ -1,17 +1,5 @@
-// .skills {
-//   padding: 55px 150px 0 150px;
-//   display: flex;
-//   align-items: center;
-//   margin-top: 80px;
-//   justify-content: center;
-// }
+@import '../core/variables';
 
-// .skillsTitle {
-//   color: white;
-//   font-weight: 700;
-//   font-size: 50px;
-//   padding-bottom: 25px;
-// }
 .skills {
   padding: 55px 150px 0 150px;
   display: flex;
@@ -34,7 +22,7 @@
 }
 
 .skillsTitle {
-  color: white;
+  color: $color-green;
   font-weight: 700;
   font-size: 50px;
   padding-bottom: 25px;

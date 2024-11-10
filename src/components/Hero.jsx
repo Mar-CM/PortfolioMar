@@ -2,6 +2,14 @@ import photoMar from "../images/Mar (2) (1).jpeg";
 import CVMar from "../download/Mar Caballero CV.pdf";
 
 function Hero() {
+	const handleDownload = () => {
+		const link = document.createElement("a");
+		link.href = CVMar;
+		link.download = "MarCaballeroCV.pdf";
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	};
 	return (
 		<>
 			<section className="hero">
@@ -40,16 +48,10 @@ function Hero() {
 							¡Hola! Soy Mar, tu desarrolladora web junior favorita.
 						</h4>
 						<p>¡Bienvenid@ a mi pequeño rincón en el ciberespacio!</p>
-						<p>
-							Aquí puedes hacer un vistazo a mis habilidades en front-end y
-							explorar los proyectos que he creado. Estoy súper emocionada de
-							compartir mi viaje contigo, así que ponte cómodo y disfruta del
-							recorrido. ¡Espero que te guste lo que ves!
-						</p>
 					</div>
-					<a href={CVMar} download="MarCaballeroCV.pdf" className="buttonCV">
+					<button onClick={handleDownload} className="buttonCV">
 						Descargar CV
-					</a>
+					</button>
 				</div>
 			</section>
 		</>

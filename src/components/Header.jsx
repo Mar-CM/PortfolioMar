@@ -1,3 +1,4 @@
+import logo from "../images/M4.jpg";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -9,10 +10,10 @@ function Header() {
 		<>
 			<header className="header">
 				<nav className="headerNav">
-					<ul className="headerLogo">
+					<ul className="headerNav_Logo">
 						<li>
-							<Link to="/" className=" headerLogo_name" onClick={scrollToTop}>
-								Mar Caballero
+							<Link to="/" onClick={scrollToTop}>
+								<img src={logo} alt="Logo Mar" className="headerLogo_img" />
 							</Link>
 						</li>
 					</ul>

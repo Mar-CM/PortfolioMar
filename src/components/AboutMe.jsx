@@ -2,7 +2,7 @@ function AboutMe() {
 	return (
 		<>
 			<section id="aboutMe" className="aboutMe">
-				<h3 className="aboutMe_tittle">Sobre mí</h3>
+				<h3 className="aboutMe_title">Sobre mí</h3>
 				<p className="aboutMe_text">
 					¡Hola mundo! 🌞 Soy Mar, una programadora Junior especializada en
 					Front-end con conocimientos en Back-end. A lo largo de mi vida, he

@@ -1,147 +1,65 @@
-// .containerContact{
-//   height: 100vh;
-// }
+@import '../core/variables';
 
-// .contact{
-//   padding-top: 120px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin-bottom: 40px;
-// }
-
-// .contactBox{
-//   width: 800px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-// .contactTitle{
-//   color: white;
-//   font-weight: 700;
-//   font-size: 50px;
-// }
-
-// .contactForm{
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-// .contactForm_input{
-//   margin: 10px;
-//   font-size: 14px;
-//   padding: 10px;
-//   border-radius: 10px;
-//   width: 100vh;
-//   outline: none;
-//   border: solid white 1px;
-// }
-
-// .message {
-//   height: 100px;
-// }
-
-// .contactButton {
-//   display: inline-block;
-//   padding: 10px 20px;
-//   background-color: #007bff;
-//   color: white;
-//   text-decoration: none;
-//   border-radius: 5px;
-//   font-weight: bold;
-//   width: 100px;
-//   border: none; 
-//   outline: none; 
-//   cursor: pointer; /* Cambia el cursor al icono de mano */
-// }
-
-.containerContact {
-  height: 100vh;
+.containerContact{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.contact {
-  padding-top: 120px;
+.contact{
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  justify-content: center;
+  padding: 20px;
 
   &Box {
-    width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  &Title {
-    color: white;
+  &Title{
+    color: $color-green;
     font-weight: 700;
     font-size: 50px;
   }
 
-  &Form {
+  &Form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 15px;
 
-    &_input {
+    &_input{
       margin: 10px;
-      font-size: 14px;
+      font-size: 16px;
       padding: 10px;
       border-radius: 10px;
-      width: 100%;
+      width: 100vh;
       outline: none;
-      border: solid white 1px;
-    }
-
-    .message {
-      height: 100px;
+      border: solid $color-green 2px;
     }
   }
 
   &Button {
+    all: unset;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
+    background-color: $color-green;
+    color: $color-white;
+    margin: 15px;
     border-radius: 5px;
     font-weight: bold;
-    width: 100px;
-    border: none; 
-    outline: none; 
     cursor: pointer;
-  }
-
-  // Estilos para tablets
-  @media (max-width: 768px) {
-    &Box {
-      width: 600px;
-    }
-
-    &Title {
-      font-size: 40px;
-    }
-  }
-
-  // Estilos para móviles
-  @media (max-width: 480px) {
-    padding-top: 80px;
-    
-    &Box {
-      width: 90%;
-    }
-
-    &Title {
-      font-size: 30px;
-    }
-    
-    &Form {
-      &_input {
-        font-size: 12px;
-      }
+    filter: brightness(70%);
+    transition: background-color 0.3s ease, transform 1s ease;
+  
+    &:hover {
+      filter: brightness(100%);
+      transform: scale(1.05);
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
   }
 }
