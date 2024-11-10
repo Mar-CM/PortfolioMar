@@ -43,7 +43,7 @@ function Contact() {
 								/>
 							</label>
 							<label htmlFor="contactForm_message">
-								<input
+								<textarea
 									className="contactForm_input message"
 									type="text"
 									id="message"

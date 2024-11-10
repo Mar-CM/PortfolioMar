@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   margin-top: 50px;
 
   &Box {
@@ -45,6 +45,7 @@
       width: 100vh;
       outline: none;
       border: solid $color-green 2px;
+      font-family: $font-web;
     }
 
   }
@@ -55,7 +56,6 @@
     padding: 10px 20px;
     background-color: $color-green;
     color: $color-white;
-    margin: 15px;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
