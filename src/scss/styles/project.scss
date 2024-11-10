@@ -1,7 +1,7 @@
 @import '../core/variables';
 
 .project {
-  padding: 55px 150px 0 150px;
+  padding: 65px 150px 0 150px;
   display: flex;
   align-items: center;
   margin-top: 80px;
@@ -60,17 +60,17 @@
     @media (max-width: 900px) {
       width: 180px;
       height: 180px;
-      filter: brightness(100%);
+      filter: brightness(60%);
     }
     @media (max-width: 468px) {
       font-size: 150px;
       height: 150px;
-      filter: brightness(100%);
+      filter: brightness(60%);
     }
 
     &:hover {
       filter: brightness(100%);
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
   }
 }
