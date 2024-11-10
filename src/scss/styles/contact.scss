@@ -1,58 +1,147 @@
-.containerContact{
+// .containerContact{
+//   height: 100vh;
+// }
+
+// .contact{
+//   padding-top: 120px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin-bottom: 40px;
+// }
+
+// .contactBox{
+//   width: 800px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .contactTitle{
+//   color: white;
+//   font-weight: 700;
+//   font-size: 50px;
+// }
+
+// .contactForm{
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .contactForm_input{
+//   margin: 10px;
+//   font-size: 14px;
+//   padding: 10px;
+//   border-radius: 10px;
+//   width: 100vh;
+//   outline: none;
+//   border: solid white 1px;
+// }
+
+// .message {
+//   height: 100px;
+// }
+
+// .contactButton {
+//   display: inline-block;
+//   padding: 10px 20px;
+//   background-color: #007bff;
+//   color: white;
+//   text-decoration: none;
+//   border-radius: 5px;
+//   font-weight: bold;
+//   width: 100px;
+//   border: none; 
+//   outline: none; 
+//   cursor: pointer; /* Cambia el cursor al icono de mano */
+// }
+
+.containerContact {
   height: 100vh;
 }
 
-.contact{
+.contact {
   padding-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
-}
 
-.contactBox{
-  width: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  &Box {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.contactTitle{
-  color: white;
-  font-weight: 700;
-  font-size: 50px;
-}
+  &Title {
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+  }
 
-.contactForm{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  &Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.contactForm_input{
-  margin: 10px;
-  font-size: 14px;
-  padding: 10px;
-  border-radius: 10px;
-  width: 100vh;
-  outline: none;
-  border: solid white 1px;
-}
+    &_input {
+      margin: 10px;
+      font-size: 14px;
+      padding: 10px;
+      border-radius: 10px;
+      width: 100%;
+      outline: none;
+      border: solid white 1px;
+    }
 
-.message {
-  height: 100px;
-}
+    .message {
+      height: 100px;
+    }
+  }
 
-.contactButton {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  width: 100px;
-  border: none; 
-  outline: none; 
-  cursor: pointer; /* Cambia el cursor al icono de mano */
+  &Button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100px;
+    border: none; 
+    outline: none; 
+    cursor: pointer;
+  }
+
+  // Estilos para tablets
+  @media (max-width: 768px) {
+    &Box {
+      width: 600px;
+    }
+
+    &Title {
+      font-size: 40px;
+    }
+  }
+
+  // Estilos para móviles
+  @media (max-width: 480px) {
+    padding-top: 80px;
+    
+    &Box {
+      width: 90%;
+    }
+
+    &Title {
+      font-size: 30px;
+    }
+    
+    &Form {
+      &_input {
+        font-size: 12px;
+      }
+    }
+  }
 }

@@ -1,3 +1,52 @@
+// .header {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   height: 60px;
+//   background-color: rgba(255, 255, 255, 0.1);
+//   z-index: 1000;
+//   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+// }
+
+// .headerNav {
+//   display: flex;
+//   justify-content: space-between;
+//   width: 100%;
+//   padding: 0 45px;
+// }
+
+// .headerLogo {
+//   color: black;
+// }
+
+// .headerLogo_name {
+//   font-size: 22px;
+//   color: white;
+//   font-weight: 700;
+// }
+
+// .headerLogo_name:hover {
+//   color: black;
+
+// }
+
+// .headerNav_list {
+//   display: flex;
+//   align-items: center;
+//   gap: 35px;
+// }
+
+// .headerNav_link {
+//   color: black;
+//   font-weight: 700;
+// }
+
+// .headerNav_link:hover {
+//   color: white;
+// }
+
 .header {
   position: fixed;
   top: 0;
@@ -8,41 +57,74 @@
   background-color: rgba(255, 255, 255, 0.1);
   z-index: 1000;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
 
-.headerNav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 45px;
-}
+  &Nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 45px;
 
-.headerLogo {
-  color: black;
-}
+    &_list {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+    }
 
-.headerLogo_name {
-  font-size: 22px;
-  color: white;
-  font-weight: 700;
-}
+    &_link {
+      color: black;
+      font-weight: 700;
 
-.headerLogo_name:hover {
-  color: black;
+      &:hover {
+        color: white;
+      }
+    }
+  }
 
-}
+  &Logo {
+    color: black;
 
-.headerNav_list {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-}
+    &_name {
+      font-size: 22px;
+      color: white;
+      font-weight: 700;
 
-.headerNav_link {
-  color: black;
-  font-weight: 700;
-}
+      &:hover {
+        color: black;
+      }
+    }
+  }
 
-.headerNav_link:hover {
-  color: white;
+  // Estilos para tablets
+  @media (max-width: 768px) {
+    height: 50px;
+
+    &Nav {
+      padding: 0 30px;
+
+      &_list {
+        gap: 25px;
+      }
+    }
+
+    &Logo_name {
+      font-size: 20px;
+    }
+  }
+
+  // Estilos para móviles
+  @media (max-width: 480px) {
+    height: 50px;
+
+    &Nav {
+      padding: 0 15px;
+
+      &_list {
+        gap: 15px;
+      }
+    }
+
+    &Logo_name {
+      font-size: 18px;
+    }
+  }
 }

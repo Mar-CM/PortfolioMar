@@ -8,11 +8,45 @@ function Projects() {
 		<>
 			<section id="project" className="project">
 				<h3 className="projectTitle">Proyectos</h3>
-				<div className="projectPhoto_container">
-					<img className="projectPhoto" src={grogu} alt="grogu" />
-					<img className="projectPhoto" src={tarjetas} alt="tarjetas" />
-					<img className="projectPhoto" src={ricky} alt="ricky" />
-					<img className="projectPhoto" src={anime} alt="anime" />
+				<div className="project_container">
+					<ul className="project_list">
+						<li>
+							<a
+								href="https://mar-cm.github.io/pairprogramming-modulo3-GroguGame/"
+								target="_blank"
+							>
+								<img className="projectPhoto" src={grogu} alt="grogu" />
+								<p></p>
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://project-promo-w-module-4-team-3.vercel.app//"
+								target="_blank"
+							>
+								<img className="projectPhoto" src={tarjetas} alt="tarjetas" />
+								<p></p>
+							</a>
+						</li>
+						<li>
+							<a
+								href="http://beta.adalab.es/modulo-3-evaluacion-final-Mar-CM/"
+								target="_blank"
+							>
+								<img className="projectPhoto" src={ricky} alt="ricky" />
+								<p></p>
+							</a>
+						</li>
+						<li>
+							<a
+								href="http://beta.adalab.es/modulo-2-evaluacion-final-Mar-CM/"
+								target="_blank"
+							>
+								<img className="projectPhoto" src={anime} alt="anime" />
+								<p></p>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</>

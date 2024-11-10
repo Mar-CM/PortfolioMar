@@ -1,3 +1,143 @@
+// .hero {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   padding-bottom: 155px;
+//   overflow: hidden;
+//   z-index: 1;
+//   flex-direction: row-reverse;
+//   margin-top: 100px;
+// }
+  
+// .heroPhoto img {
+//   width: 300px;
+//   height: 300px;
+//   border-radius: 50%;
+//   margin-right: 300px;
+// }
+
+// .heroName {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding-top: 50px;
+//   padding-left: 175px;
+//   padding-right: 50px;
+// }
+
+// .heroName_letter {
+//   line-height: 0.8;
+// }
+
+// .text-letter {
+//   display: inline-block;
+//   font-weight: 900;
+//   color: white;
+//   font-size: 66px;
+//   cursor: pointer;
+//   transition: transform 0.2s ease;
+// }
+
+// .text-letter:hover {
+//   transform: rotate(35deg);
+//   // color: #214a46;
+// }
+
+// .heroText {
+//   margin-top: 30px;
+  
+//   }
+
+// .heroText_name {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .buttonCV {
+//   display: inline-block;
+//   padding: 10px 20px;
+//   margin: 15px;
+//   background-color: #007bff;
+//   color: white;
+//   text-decoration: none;
+//   border-radius: 5px;
+//   font-weight: bold;
+//   transition: background-color 0.3s ease transform 1s ease;
+// }
+
+// .buttonCV:hover {
+//   background-color: #0056b3;
+//   transform: scale(1.05);
+//   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+// }
+
+// .ball {
+//   position: absolute;
+//   width: 100px; 
+//   height: 100px; 
+//   background-color: rgba(255, 255, 255, 0.2); 
+//   border-radius: 50%;
+//   filter: blur(35px); 
+//   z-index: 0; 
+// }
+
+// /* Animaciones para las bolas */
+// .ball1 {
+//   animation: moveBall1 18s linear infinite; 
+// }
+
+// .ball2 {
+//   animation: moveBall2 15s linear infinite; 
+// }
+
+// @keyframes moveBall1 {
+//   0% {
+//     top: 0;
+//     left: 0;
+//   }
+//   25% {
+//     top: 20%; 
+//     left: 80%; 
+//   }
+//   50% {
+//     top: 80%; 
+//     left: 50%; 
+//   }
+//   75% {
+//     top: 60%; 
+//     left: 20%; 
+//   }
+//   100% {
+//     top: 0;
+//     left: 0; 
+//   }
+// }
+
+// @keyframes moveBall2 {
+//   0% {
+//     top: 100%;
+//     left: 100%;
+//   }
+//   25% {
+//     top: 30%; 
+//     left: 50%; 
+//   }
+//   50% {
+//     top: 70%; 
+//     left: 10%; 
+//   }
+//   75% {
+//     top: 10%; 
+//     left: 60%;
+//   }
+//   100% {
+//     top: 100%;
+//     left: 100%;
+//   }
+// }
+
 .hero {
   position: relative;
   display: flex;
@@ -9,131 +149,140 @@
   z-index: 1;
   flex-direction: row-reverse;
   margin-top: 100px;
-}
-  
-.heroPhoto img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  margin-right: 300px;
-}
 
-.heroName {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 50px;
-  padding-left: 175px;
-  padding-right: 50px;
-}
-
-.heroName_letter {
-  line-height: 0.8;
-}
-
-.text-letter {
-  display: inline-block;
-  font-weight: 900;
-  color: white;
-  font-size: 66px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.text-letter:hover {
-  transform: rotate(35deg);
-  // color: #214a46;
-}
-
-.heroText {
-  margin-top: 30px;
-  
+  &Photo {
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      margin-right: 300px;
+    }
   }
 
-.heroText_name {
-  display: flex;
-  justify-content: center;
-}
+  &Name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 175px;
+    padding-right: 50px;
 
-.buttonCV {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 15px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease transform 1s ease;
-}
+    &_letter {
+      line-height: 0.8;
+    }
 
-.buttonCV:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-}
+    .text-letter {
+      display: inline-block;
+      font-weight: 900;
+      color: white;
+      font-size: 66px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
 
-.ball {
-  position: absolute;
-  width: 100px; 
-  height: 100px; 
-  background-color: rgba(255, 255, 255, 0.2); 
-  border-radius: 50%;
-  filter: blur(35px); 
-  z-index: 0; 
-}
+      &:hover {
+        transform: rotate(35deg);
+      }
+    }
+  }
 
-/* Animaciones para las bolas */
-.ball1 {
-  animation: moveBall1 18s linear infinite; 
-}
+  &Text {
+    margin-top: 30px;
 
-.ball2 {
-  animation: moveBall2 15s linear infinite; 
-}
+    &_name {
+      display: flex;
+      justify-content: center;
+    }
+  }
 
-@keyframes moveBall1 {
-  0% {
-    top: 0;
-    left: 0;
-  }
-  25% {
-    top: 20%; 
-    left: 80%; 
-  }
-  50% {
-    top: 80%; 
-    left: 50%; 
-  }
-  75% {
-    top: 60%; 
-    left: 20%; 
-  }
-  100% {
-    top: 0;
-    left: 0; 
-  }
-}
+  .buttonCV {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 1s ease;
 
-@keyframes moveBall2 {
-  0% {
-    top: 100%;
-    left: 100%;
+    &:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
   }
-  25% {
-    top: 30%; 
-    left: 50%; 
+
+  .ball {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    filter: blur(35px);
+    z-index: 0;
   }
-  50% {
-    top: 70%; 
-    left: 10%; 
+
+  .ball1 {
+    animation: moveBall1 18s linear infinite;
   }
-  75% {
-    top: 10%; 
-    left: 60%;
+
+  .ball2 {
+    animation: moveBall2 15s linear infinite;
   }
-  100% {
-    top: 100%;
-    left: 100%;
+
+  @keyframes moveBall1 {
+    0% { top: 0; left: 0; }
+    25% { top: 20%; left: 80%; }
+    50% { top: 80%; left: 50%; }
+    75% { top: 60%; left: 20%; }
+    100% { top: 0; left: 0; }
+  }
+
+  @keyframes moveBall2 {
+    0% { top: 100%; left: 100%; }
+    25% { top: 30%; left: 50%; }
+    50% { top: 70%; left: 10%; }
+    75% { top: 10%; left: 60%; }
+    100% { top: 100%; left: 100%; }
+  }
+
+  // Estilos para tablets
+  @media (max-width: 768px) {
+    &Photo img {
+      width: 250px;
+      height: 250px;
+      margin-right: 150px;
+    }
+
+    &Name {
+      padding-left: 100px;
+      padding-right: 30px;
+
+      .text-letter {
+        font-size: 50px;
+      }
+    }
+  }
+
+  // Estilos para móviles
+  @media (max-width: 480px) {
+    flex-direction: column;
+    margin-top: 50px;
+
+    &Photo img {
+      width: 200px;
+      height: 200px;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &Name {
+      padding-left: 0;
+      padding-right: 15px;
+
+      .text-letter {
+        font-size: 36px;
+      }
+    }
   }
 }
