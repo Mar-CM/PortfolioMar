@@ -19,15 +19,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   &Title{
     color: $color-green;
     font-weight: 700;
     font-size: 50px;
+    text-align: center;
+    // margin: 0 15px;
   }
   
   &Text {
+    text-align: center;
+    @media (max-width: 480px) {
+      width: 100%;
+      font-size: 14px;
+    }
 
   }
 
@@ -36,16 +45,27 @@
     flex-direction: column;
     align-items: center;
     margin: 15px;
+    width: 100%;
+    box-sizing: border-box;
 
     &_input{
       margin: 10px;
       font-size: 16px;
       padding: 10px;
       border-radius: 10px;
-      width: 100vh;
+      width: 80vh;
       outline: none;
       border: solid $color-green 2px;
       font-family: $font-web;
+      box-sizing: border-box;
+
+      @media (max-width: 768px) {
+        width: 60vh;
+      }
+
+      @media (max-width: 480px) {
+        width: 40vh;
+      }
     }
 
   }
@@ -72,4 +92,5 @@
 
 .message {
   height: 100px;
+  box-sizing: border-box;
 }

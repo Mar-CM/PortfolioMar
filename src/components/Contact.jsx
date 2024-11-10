@@ -7,13 +7,13 @@ function Contact() {
 				<section className="contact">
 					<div className="contactBox">
 						<h2 className="contactTitle">¿Charlamos?</h2>
-						<p className="contactText">
-							Si tienes alguna idea, pregunta o quieres colaborar en algo
-							increíble, ¡escríbeme!
-						</p>
-						<p className="contactText">
-							Estoy siempre abierta a nuevos proyectos y retos.
-						</p>
+						<div className="contactText">
+							<p>
+								Si tienes alguna idea, pregunta o quieres colaborar en algo
+								increíble, ¡escríbeme!
+							</p>
+							<p>Estoy siempre abierta a nuevos proyectos y retos.</p>
+						</div>
 						<form className="contactForm">
 							<label htmlFor="contactForm_name">
 								<input
