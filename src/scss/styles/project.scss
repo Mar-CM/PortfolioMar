@@ -4,17 +4,14 @@
   padding: 65px 150px 0 150px;
   display: flex;
   align-items: center;
-  margin-top: 80px;
   justify-content: center;
   flex-direction: column;
 
   @media (max-width: 768px) {
     padding: 40px 80px 0 80px;
-    margin-top: 60px;
   }
   @media (max-width: 480px) {
     padding: 40px 20px 0 20px;
-    margin-top: 40px;
   }
 
   &Title {
