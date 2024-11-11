@@ -7,32 +7,30 @@
   justify-content: center;
   padding: 65px 150px 0 150px;
 
+  @media (max-width: 768px) {
+    padding: 55px 80px 0 80px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 40px 20px 0 20px;
+  }
+
   &_title {
     color: $color-green;
     font-weight: 700;
     font-size: 50px;
     padding: 0 0 30px;
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
   }
 
   &_text {
     padding-bottom: 10px;
-  }
-
-  // Estilos para tablets
-  @media (max-width: 768px) {
-    padding: 40px 80px 0 80px;
-
-    &_tittle {
-      font-size: 40px;
-    }
-  }
-
-  // Estilos para móviles
-  @media (max-width: 480px) {
-    padding: 30px 20px 0 20px;
-
-    &_tittle {
-      font-size: 30px;
-    }
   }
 }
