@@ -10,7 +10,7 @@ function Skills() {
 	const skills = [
 		{
 			title: "Frontend",
-			logos: ["HTML5", "CSS3", "SASS", "JavaScript", "React", "Typescript"],
+			logos: ["HTML5", "CSS3", "SASS", "JavaScript", "React"],
 		},
 		{
 			title: "Backend",
