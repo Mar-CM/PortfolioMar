@@ -1,5 +1,5 @@
 import photoMar from "../images/Mar (2) (1).jpeg";
-import CVMar from "../download/Mar Caballero CV.pdf";
+import CVMar from "../download/CV Mar Caballero.pdf";
 
 function Hero() {
 	const handleDownload = () => {
